@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #87ceeb, #1e90ff);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+#splash {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #1e90ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#splash button {
+  font-size: 1.5em;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  background: white;
+  color: #1e90ff;
+}
+.hidden { display: none; }
+.page {
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 10px;
+}
+.chole {
+  max-width: 300px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+.heart {
+  position: fixed;
+  top: -10px;
+  font-size: 24px;
+  color: pink;
+  animation: fall linear;
+}
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
